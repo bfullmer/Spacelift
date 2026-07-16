@@ -1,0 +1,8 @@
+name = "spacelift"
+compatibility_date = "2026-07-16"
+
+# Deploy the static site in ./public as a Cloudflare Workers Assets project.
+# This gives `npx wrangler deploy` a directory of static files to detect,
+# resolving "Could not detect a directory containing static files".
+[assets]
+directory = "./public"
